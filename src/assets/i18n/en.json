@@ -1,0 +1,6 @@
+{
+    "HELLO": "Have you already done your first HELLO WORLD with ANGULAR?!",
+    "GREETING": "Hello {{name}}, nice to meet you.",
+    "TITLE": "App multi language",
+    "BUTTON": "With this button you can change the language"
+  }

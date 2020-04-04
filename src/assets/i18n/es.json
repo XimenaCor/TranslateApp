@@ -1,0 +1,6 @@
+{
+    "HELLO": "Ya hicieron su primer HOLA MUNDO en ANGULAR?!",
+    "GREETING": "Hola {{name}}, un gusto conocerte.",
+    "TITLE": "Aplicacion multi idioma",
+    "BUTTON": "Con este boton pueden cambiar de idioma!"
+  }
