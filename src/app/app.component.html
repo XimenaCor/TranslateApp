@@ -349,12 +349,18 @@
   <div style="background-color: rgb(196, 121, 199); padding: 5px;"><h3>{{ 'GREETING' | translate:{name:'Marco'} }}</h3></div>
   <br>
   <label>
-    <div style="width: 100%; padding: 5px;">{{ 'BUTTON' | translate }}</div>
-    <select #langSelect (change)="changeLang(langSelect.value)" style="display: flex; align-self: center;">
-      <option *ngFor="let lang of langs" [value]="lang">
-        {{ lang }}
-      </option>
-    </select>
+
+    <div class="input-group mb-3">
+      <div style="width: 100%; padding: 5px;">{{ 'BUTTON' | translate }}</div>
+      <select #langSelect (change)="changeLang(langSelect.value)" class="custom-select" id="inputGroupSelect01" style="display: flex; align-self: center;">
+        <option selected>Seleccionar</option>
+        <option *ngFor="let lang of langs" [value]="lang">
+          {{ lang }}
+        </option>
+      </select>
+    </div>
+    <!-- <button type="button" class="btn btn-warning" (change)="changeLang(en)">INGLES</button>
+    <button type="button" class="btn btn-info" (change)="changeLang(es)">ESPA&Ntilde;OL</button> -->
   </label>
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
